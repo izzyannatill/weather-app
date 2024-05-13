@@ -3,8 +3,6 @@ function displayTemperature(response) {
   let temperature = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#current-city");
   cityElement.innerHTML = response.data.city;
-  let weatherIcon = document.querySelector(".current-temperature-icon");
- weatherIcon.innerHTML = `<img src="  ${response.data.condition.icon_url}" class="current-temperature-icon" />`;
 }
 
 function search(event) {
